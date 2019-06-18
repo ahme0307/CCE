@@ -1,3 +1,7 @@
+% Image color gradient 
+%Mohammed, Ahmed, Ivar Farup, Marius Pedersen, Øistein Hovde, and Sule Yildirim Yayilgan. "Stochastic capsule endoscopy image enhancement." Journal of Imaging 4, no. 6 (2018): 75.
+
+
 function edge_magnitude=tensorgrad(im)
 
 	im = single(im) / 255;

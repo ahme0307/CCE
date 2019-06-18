@@ -1,6 +1,8 @@
-% function contrRwalk(filename,alpha,beta,nois)
-% clear all;
-% if isempty(filename)
+
+% Demo for Stochastic Capsule Endoscopy Image Enhancement. The input image can be of format (jpg, bmp)
+% If your input image is off different format change bmpfiles = dir([IO_Folder '/*.bmp']); accordingly
+%Please dont forget to cite Mohammed, Ahmed, Ivar Farup, Marius Pedersen, Øistein Hovde, and Sule Yildirim Yayilgan. "Stochastic capsule endoscopy image enhancement." Journal of Imaging 4, no. 6 (2018): 75.
+
 clc; 
 clear all
 IO_Folder='.\Input_images';
@@ -40,7 +42,7 @@ for ch=1:size(im,3)
     for x=1:size(img,2)-1
         tStartensor = tic; 
         
-       parfor y=1:size(img,1)-1
+       for y=1:size(img,1)-1
           tStarden = tic; 
           [tx,ty]=RanWalker(N,M,size(img,1)-2,size(img,2)-2,y,x,R1,R2);
           [res_vp,res_rp,xdenRp]=PdenEnhcce(img,cat(3,tx'+1,ty'+1),tensgrad,R1,R2,alpha,beta);
@@ -49,7 +51,7 @@ for ch=1:size(im,3)
           res_r(y,x,ch)=res_rp; 
        end
           tElapsed = toc(tStartensor);
-          counter=strcat(num2str(tElapsed),' And iteration  =', num2str(x))
+          counter=strcat(num2str(tElapsed),' time and iteration  =', num2str(x))
     end
     
       

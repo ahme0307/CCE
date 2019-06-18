@@ -1,3 +1,15 @@
+/*
+C-code for random walk and stochastic sampling. Random walk is initialized with in R1
+and stochastic sampling is within R2. 
+
+Mohammed, Ahmed, Ivar Farup, Marius Pedersen, Øistein Hovde, and Sule Yildirim Yayilgan. 
+"Stochastic capsule endoscopy image enhancement." Journal of Imaging 4, no. 6 (2018): 75.
+
+
+*/
+
+
+
 #include "mex.h"
 #include "math.h"
 
