@@ -27,6 +27,8 @@ To run
 Capsule video endoscopy images
 
 ## Reference
+If you find this code useful please cite
+
 >Mohammed, Ahmed, Ivar Farup, Marius Pedersen, Øistein Hovde, and Sule Yildirim Yayilgan. "Stochastic capsule endoscopy image enhancement." Journal of Imaging 4, no. 6 (2018): 75.
 
 
